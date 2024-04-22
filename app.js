@@ -522,8 +522,6 @@
 // //   console.log("yes");
 // // }
 
-
-
 //JAVASCRIPT MATH OBJECT
 
 // Steven wants to build a very simple tip calculator for whenever he goes eating in a
@@ -551,18 +549,13 @@
 //   `The bill was ${bill} The tip was ${tip} The total value was ${bill + tip}`
 // );
 
-
-
-
 // let num = 42;
 // let str = "42";
 
 // console.log(num == str); // true
 
-
 // let num = 42;
 // let str = "The answer is " + num;
-
 
 //<-----FUNCTIONS-------> they are block of variables that can be reused
 
@@ -582,6 +575,7 @@
 //   console.log("The current year is " + year);
 // }
 // logYear(1990);
+
 // //jane
 // //paramaters - ensure that functions are resuable
 
@@ -698,3 +692,188 @@
 // const myLogger = (a, b, c) => {
 //   return a * b * c
 // }
+
+//<-----FUNCTIONS-------> they are block of variables that can be reused
+
+// <------- FUNCTIONS- block of codes that can be resused ------>
+// function functionName (){block of code}
+// invoked or called functionName()
+//const myName = "John Doe";
+// function welcomeUser() {
+//   console.log("Welcome User");
+// }
+
+// welcomeUser();
+// welcomeUser();
+//
+
+//function logYear(year) {
+// console.log("The current year is " + year);
+
+//logYear(1990);
+
+
+
+// Assignment
+
+// 1. Create a function that takes a number as a parameter, and returns the next number after the number passed e.g i pass in 10 it return 11
+
+// function nextNumber(number) {
+//   return number + 1;
+// }
+
+//convert to an arrow function
+// console.log(nextNumber(10));
+
+// Convert Age to days
+//Create a function that takes in age in years and returns the age in days. Note use 365days as the length of the year for this, Also expect only positive integers, negative integers should return an error
+
+// function ageInDays(ageInYears) {
+//   if (ageInYears <= 0) {
+//     return "Error: Age must be a Positive integer";
+//   } else {
+//     return ageInYears * 365;
+//   }
+// }
+
+
+
+// console.log(ageInDays(20));
+
+// console.log(ageInDays(40));
+
+// console.log(ageInDays(-5));
+
+// Less than 100
+//Given two numbers return true if the sum(addition) of both numbers  is less than 100, otherwise false
+
+// function numLessThan100(num1, num2) {
+//   return num1 + num2 < 100;
+// }
+//convert to an arrow function
+
+
+// console.log(numLessThan100(30, 10));
+
+// console.log(numLessThan100(70, 60));
+
+// Create a function that takes the numbers of wins, draws, and losses and calculates the number of points a football team has. A win gets 3 points, a draw gets 1 point and a loss gets 0
+
+// function calculatePoints(wins, draws, losses) {
+//   return wins * 3 + draws * 1 + losses * 0;
+// }
+//arrow func
+// const wins = 5;
+// const draws = 3;
+// const losses = 2;
+// const totalPoints = calculatePoints(wins, draws, losses);
+// console.log("Total points:", totalPoints);
+
+
+//
+//
+//
+//
+
+
+//loops and recursion - for, while, do..while loop
+
+// for (initializer; condition; increment ){ block of code }
+
+// for (let i = 0; i < 10; i++) {
+//   console.log("The current value of i is : " + i);
+// }
+
+// // program that calculates the sum of natural numbers 1 -100
+// let sum = 0;
+// for (i = 1; i <= 100; i++) {
+//   sum += i;
+// }
+// console.log(sum);
+
+// let x = 0;
+// while (x < 5) {
+//   console.log(x);
+//   x++;
+// }
+
+//do.. while -- will run at least once
+
+// let y = 2;
+// do {
+//   console.log("The value of Y is " + y);
+//   y++;
+// } while (y < 1);
+
+//complex Data types - ARRAYS, OBJECTS
+// <-------ARRAYS------->
+
+const students = ["Kelvin", "Yomi", "Felix", "Tonia"];
+console.log(students);
+//arrays properties - length
+console.log(students.length);
+console.log(students[2]);
+
+// change element in an array
+// students[0] = "Ade";
+// students[4] = "Tobi";
+console.log(students);
+
+//ARRAY METHODS - adding push, unshift  and
+students.push("Tayo");
+students.push("Christian");
+students.unshift("Sylvia");
+console.log(students);
+//removing elements from array pop shift
+students.pop();
+console.log(students.pop());
+students.shift();
+console.log(students);
+
+// more array methods inludes
+console.log(students.includes("Tonia"));
+// console.log(students.reverse());
+const newStudents = students.concat(["Samuel", "Pelumi"]);
+console.log(students.indexOf("Tonia"));
+
+// slice,
+
+console.log(newStudents.slice(0, 2));
+console.log(newStudents.join("+"));
+console.log(students.toString());
+
+//higher array methods -map, forEach filter, find, sort, reduce
+const cars = ["Toyota", "BMW", "Benz", "Ford", "Mazda"];
+console.log(cars.sort());
+const points = [40, 100, 1, 5, 10, 25];
+// console.log(points.sort());
+// const arranged = points.sort((a, b) => a - b);
+
+// console.log(arranged);
+
+//MAP AND FOREACH
+cars.forEach((car, index) => {
+  console.log(index, "I own a " + car);
+});
+
+//MAP - iterates over elements in an array and returns a new array
+points.map((point, index) => {
+  console.log(point, index);
+});
+let balance = 80000;
+const transations = [3000, 45000, -525, -10000, 32000];
+transations.push(5000)
+transations.push (4500);
+transations.pop();
+
+transations.map((transaction) => {
+  
+  if(transaction > 0 ) {
+    console.log(`You have a debit of ${transaction} Naira`);
+  } else { 
+    console.log(`You have a debit of ${transaction}Naira`);
+  }
+
+  return (balance += transaction);
+});
+console.log(`The current Balance is ${balance}`);
