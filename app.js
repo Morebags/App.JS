@@ -19,6 +19,7 @@
 // let age = 90;
 // let myAccountNumber = 927827267;
 
+
 // //reserved keywords
 
 // let myTime = "8AM";
@@ -806,74 +807,628 @@
 // } while (y < 1);
 
 //complex Data types - ARRAYS, OBJECTS
+
+
 // <-------ARRAYS------->
 
-const students = ["Kelvin", "Yomi", "Felix", "Tonia"];
-console.log(students);
-//arrays properties - length
-console.log(students.length);
-console.log(students[2]);
+// const students = ["Kelvin", "Yomi", "Felix", "Tonia"];
+// console.log(students);
+// //arrays properties - length
+// console.log(students.length);
+// console.log(students[2]);
 
-// change element in an array
-// students[0] = "Ade";
-// students[4] = "Tobi";
-console.log(students);
+// //change element in an array
+//  students[0] = "Ade";
+//  students[4] = "Tobi";
+// console.log(students);
 
-//ARRAY METHODS - adding push, unshift  and
-students.push("Tayo");
-students.push("Christian");
-students.unshift("Sylvia");
-console.log(students);
-//removing elements from array pop shift
-students.pop();
-console.log(students.pop());
-students.shift();
-console.log(students);
+// // // //ARRAY METHODS - adding push --end, unshift -- add from the start
+// students.push("Tayo"); 
+// students.push("Christian"); 
+// students.unshift("Sylvia"); 
+// console.log(students);
+// //removing elements from array pop shift
+// students.pop();
+// console.log(students.pop());
+// students.shift();
+// console.log(students);
 
-// more array methods inludes
-console.log(students.includes("Tonia"));
-// console.log(students.reverse());
-const newStudents = students.concat(["Samuel", "Pelumi"]);
-console.log(students.indexOf("Tonia"));
+// // more array methods inludes
+// console.log(students.includes("Tonia"));
+// // console.log(students.reverse());
+// const newStudents = students.concat(["Samuel", "Pelumi"]);
+// console.log(students.indexOf("Tonia"));
 
-// slice,
+// // // slice,
+// console.log(newStudents.slice(0, 2));
+// console.log(newStudents.join("+"));
+// console.log(students.toString());
 
-console.log(newStudents.slice(0, 2));
-console.log(newStudents.join("+"));
-console.log(students.toString());
 
-//higher array methods -map, forEach filter, find, sort, reduce
-const cars = ["Toyota", "BMW", "Benz", "Ford", "Mazda"];
-console.log(cars.sort());
-const points = [40, 100, 1, 5, 10, 25];
-// console.log(points.sort());
+
+//higher array methods -map, sort,  forEach filter, find, reduce
+// const cars = ["Toyota", "BMW", "Benz", "Ford", "Mazda"];
+// console.log(cars.sort());
+
+// const points = [40, 100, 1, 5, 10, 25];
+//  console.log(points.sort());
+
 // const arranged = points.sort((a, b) => a - b);
-
 // console.log(arranged);
 
-//MAP AND FOREACH
-cars.forEach((car, index) => {
-  console.log(index, "I own a " + car);
-});
+// //MAP AND FOREACH
+// cars.forEach((car, index) => {
+//   console.log(index, "I own a " + car);
+// });
 
-//MAP - iterates over elements in an array and returns a new array
-points.map((point, index) => {
-  console.log(point, index);
-});
-let balance = 80000;
-const transations = [3000, 45000, -525, -10000, 32000];
-transations.push(5000)
-transations.push (4500);
-transations.pop();
+// //MAP - iterates over elements in an array and returns a new array
+// points.map((point, index) => {
+//   console.log(point, index);
+// });
 
-transations.map((transaction) => {
+// let balance = 80000;
+// const transactions = [3000, 45000, -525, -10000, 32000];
+// transactions.push(5000)
+// transactions.push (4500);
+// transactions.pop();
+
+
+// //transactions.map((transactions) => {
   
-  if(transaction > 0 ) {
-    console.log(`You have a debit of ${transaction} Naira`);
-  } else { 
-    console.log(`You have a debit of ${transaction}Naira`);
-  }
+// transactions.map((transaction) => {
+//     if (transaction > 0) {
+//       console.log(`you have a credit of ${transaction} Naira`);
+//   } else {
+//     console.log(`you have a debit of ${transaction} Naira`);
+//   }
+//     return (balance += transaction);
+//   });
+//   console.log(`the current balance is ${balance}`);
+  
+//   // filter return every elements that fits a search condition
+//   const yourCredits = transactions.filter((transaction) => transaction > 0);
+//   console.log(yourCredits);
+//   const yourDebits = transactions.filter((transaction) => transaction < 0);
+//   console.log(yourDebits);
+//    transactions.push(2000000);
 
-  return (balance += transaction);
-});
-console.log(`The current Balance is ${balance}`);
+//    const fraudAlert  =transactions.find((transaction) => 2000000);
+//    console.log(fraudAlert);
+//    if (fraudAlert); {
+//     console.log("Suspend account");
+//    }
+  
+//   const tests = ["Wale", "Ade", "Bayonle", "Ngozi"];
+//   const result = tests.filter((test) => tests.length >= 4);
+//   console.log(result);
+  
+//   // find: returns the first element that fits a search condtion
+//   const result2 = tests.filter((test) => tests.length >= 5);
+//   console.log(result2);
+
+
+
+
+  // declare a users array with 5 string elements // check the length
+
+// declare another array users2 with 2 elements // check if the first element in the users array and the second element in the
+
+//users2 array are equal using ternary operator // change the first elements in the two arrrays to another value
+
+// loop over the users array using the forEach and log to the //console in this format The current user is ken
+
+// filter the users array and return only elements that the length is more than five // log to the console the reversed filtered array
+
+// class work
+// const users1 = ["Goerge", "kelvin", "Ifeanyi", "Adams", "Tayo", "Madrid" ];
+// console.log(users1.length);
+
+// const users2 = ["kelvin", "Ifeanyi"];
+// console.log(users2.length);
+// users1 == users2 ? console.log("true") : console.log("false");  
+
+// users1.push("Kelvin");
+// console.log(users1);
+// users2.push("Ifeanyi");
+// console.log(users2);
+
+// users1.forEach ((users1, index) => {
+// console.log(`the current user is : ${users1}`)
+// });
+
+// const filteredusers = users1.filter((user1) => user1.length > 5 );
+// console.log(filteredusers);
+
+// console.log(users1.reverse());
+
+
+
+//reduce in an ARRAY
+
+// const cartPrices = [4000, 3200, 560, 10000];
+// const vat =345;
+
+// const total = cartPrices.reduce((Prev,Curr) => {
+//   return Prev + Curr;
+// }, vat);
+// console.log(total) ;
+
+// //ARRAY DESTURCTURING
+
+// const customers = ["jax BRiggs", "Liu Kang", "King Lao","Raiden","Kotal Kahn",];
+
+// console.log(customers);
+// const [,,, third] = customers;
+// console.log(third);
+
+
+// //rest...LHS
+// //spread ... RHS
+
+// const[,first, ...others] = customers ;
+// console.log(others);
+// const[...players] = customers;
+// console.log(players);
+
+// const developingCountries = ["Nigeria", "Brazil","Ghana","Togo","Iraq"];
+// const developedCountries = ["USA","Germany","UK", "switzerland" ];
+
+// const newCountries = [
+//   "Afghanistan",
+//   ...developedCountries,
+//   "Norway",
+//   ...developingCountries,
+//   "Protugal"
+// ];
+
+
+//array Methods
+// declare a veriables called balance set to any number value
+
+// let balance = 3000;
+
+
+// //creat transactions array consisting of at least 4 credit and 3 debit alerts
+
+// const transactions = [4000, 5000, 10000, 70000, -2000, -76400, -4000,]
+
+// //at some point, a new transaction of 5000 credit was don add it to the end of the transaction array
+
+// transactions.push(5000)
+// //debit 50000
+//  transactions.pop()
+
+
+// // genegrate a simple statment account; for every debit and amount has been debited 
+// //for credit, amount has been credited
+
+
+// // transations.map((transactions) => {
+  
+//    transactions.map((transaction) => {
+//       if (transaction > 0) {
+//       console.log(`you have a credit of ${transaction} 70000`);
+//    } else {
+//       console.log(`you have a debit of ${transaction} 2000`);
+//     }
+//       return (balance += transaction);
+//    });
+//     console.log(`the current balance is ${balance}`);
+    
+    
+//     //8500
+//     const checkAmount = transactions.includes (8500);
+//     if (checkAmount) {
+
+//     } else {
+//       console.log("NO such amount in your transaction history");
+//     };
+          
+
+//                //filter
+//       const yourCredits = transactions.filter((transaction) => transaction > 0);
+//       console.log(yourCredits);
+//      const yourDebits = transactions.filter((transaction) => transaction < 0);
+//      console.log(yourDebits);
+
+       
+//      //claculate the available nalamce for this user using the reduce method 
+//       const availableBalance = transactions.reduce((Prev,Curr) => {
+//       return Prev + Curr;
+//       }, balance);
+//       console.log(availableBalance) ;
+
+
+
+//      // loan amount must be <= avaibleBalance *2
+
+//      const checkLoanEligibility = (amount) => { 
+//        if (amount <= availableBalance * 2) {
+//         console.log ('Yes you are eligible for the loan');
+//        } else {
+//         console.log("You are not eligile for the loan");
+//        }
+//      };
+
+//      checkLoanEligibility (5000);
+//      checkLoanEligibility (10000);
+//      checkLoanEligibility (3000);
+
+// //online transaction
+//  //write a function to check the tranferstatus of an amount
+//  // amount <= avaiblebalance
+
+//  function transferAmount(amount) {
+//    amount <= availableBalance ? console.log("transaction successful") : console.log ("insufficientt funds");
+//   }
+
+//  transferAmount(4000);
+//  transferAmount(1000);
+//  transferAmount(3000);
+
+
+// //depositAmount --- if depisimount is > limit log ('account rstricted)
+
+// const limit = 20000
+
+// function depositAmount(amount) {
+//   amount > limit ? console.log("Account Restricted") : console.log("Deposit successful");
+// }
+
+// depositAmount(60000);
+// depositAmount(56000);
+
+
+
+// OBJECTS
+// const person = ["John", "doe", 76, "Developer", "Google", "Seattle", true];
+
+//key: value,
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 45,
+//   job: "Backend Engineer",
+//   location: "Athens",
+//   isMarried: true,
+//   friends: ["Peter", "Jane", "Mario"],
+//   previousWork: {
+//     google: {
+//       role: "Software tester",
+//       duration: "5 years",
+//     },
+//     microsoft: {
+//       role: "Junior Backend Dev",
+//       duration: "6 years",
+//     },
+//   },
+// };
+
+// console.log(person.previousWork.google.role);
+
+// //access properties inside of an object
+// // dot notation objName.propertyName , bracket notation objName['propertyName']
+
+// console.log(person.age);
+// console.log(person["age"]);
+// console.log(person.location.toUpperCase());
+// console.log(person["lastName"].toUpperCase());
+// console.log(person.friends[0]);
+
+// //add properties to an object
+
+// person.nickName = "Johnny";
+// person.canDrive = false;
+// console.log(person);
+
+// person.previousWork.konga = {
+//   role: "Intern",
+//   duration: "6 months",
+// };
+
+// // remove property from an object delete
+
+// delete person.age;
+// delete person.previousWork.konga;
+// console.log(person);
+
+// const book = {
+//   title: "Demon Slayer",
+//   author: "Ghost Damon",
+//   yearPublished: 1995,
+//   rating: 4.2,
+//   amount: 4.56,
+//   similarBooks: [
+//     {
+//       id: 1,
+//       title: "In the Den",
+//     },
+//     {
+//       id: 2,
+//       title: "Jungle kids",
+//     },
+//   ],
+//   publisher: "Oxford",
+//   description: function () {
+//     console.log(
+//       `The Book ${this.title} is rated ${this.rating} is written by ${this.author}`
+//     );
+//   },
+//   purchaseBook: function () {
+//     console.log(this.amount, this.rating);
+//   },
+// };
+
+// book.similarauthors = ["John", "Peter", "Mark"];
+// book.similarBooks[1].id;
+
+// book.description();
+// book.purchaseBook();
+
+
+// //object methods - functions that are written to act on the obj
+// //Object destructuring - allows to pick multiple properties from an object
+
+// const car = {
+//   brand: "Benz",
+//   numOfDoors: 4,
+//   horsePower: "4.5hp",
+//   color: "Black",
+//   type: "Sedan",
+//   similarBrands: {
+//     porche: {
+//       color1: "black",
+//     },
+//     bugatti: {
+//       color2: "red",
+//     },
+//   },
+// };
+
+// const {brand, numOfDoors, type, color, similarBrands: {porche: {color1},},} = car
+// console.log(brand,type)
+
+
+// //keys. Values
+// //object.keys(objectName)
+
+// console.log(Object.keys(car));
+
+// console.log(Object.values(car));
+
+// console.log(Object.entries(car));
+
+
+// /////
+// const students = [
+//   {
+//     fullName: "Quam IDK",
+//     age: 65,
+//     role: "Frontend engineer",
+//   },
+//   {
+//     fullName: "Felix Muoka",
+//     age: 34,
+//     role: "Backend engineer",
+//   },
+//   {
+//     fullName: "Yomi Brown",
+//     age: 18,
+//     role: "Fullstack engineer",
+//   },
+//   {
+//     fullName: "Kelvin Bassey",
+//     age: 22,
+//     role: "Product Manager",
+//   },
+//   {
+//     fullName: "Tonia Ezinne",
+//     age: 33,
+//     role: "Technical writer",
+//   },
+// ];
+// console.log(students);
+
+// console.log(`Number of students is ${students.length}`);
+
+// students.map((student) => {
+//   console.log(student.fullName);
+// });
+
+// // have a list of the engineers
+// const engineers = students.filter((student) =>
+//   student.role.includes("engineer")
+// );
+// console.log(engineers);
+
+// // older than > 30
+
+// const olderStudent = students.filter((students) => students.age >30);
+// console.log (olderStudent);
+
+// //list of student < 30
+
+// const Youngstudent = students.filter((students) => students.age < 30);
+// console.log(Youngstudent)
+
+// ///
+// ////////////;;;;//const studentsRole = students
+
+// students.map((student) => {
+//   console.log(student.role);
+// });
+
+
+
+
+// const shoppingCart = [
+//    {
+//     id: 1,
+//     item: "Black Hoodie",
+//   price: 15000,
+//    },
+//    {
+//     id: 2,
+//     item: "Jean",
+//     price: 24000,
+//    },
+//    {
+//     id: 3,
+//     item: "Sweatshirt",
+//     price: 12000,
+//    },
+//    {
+//     id: 4,
+//    item: "Cap",
+//    price: 7000,
+//    },
+// ];
+
+// //1. display all of the items and the price in the console
+// shoppingCart.map ((cartItem) => {
+//   const {item, price} = cartItem;
+//   console.log(item, price);
+// });
+
+
+// ///calculate the total price use reduce
+// const totalPrice = shoppingCart. reduce((prev, current) => {
+//   return prev + current.price
+// },0);
+
+// console.log(totalPrice);    
+
+
+
+// build a simple ATM machine
+// creat a customer that has two properties - pin and balance
+// build a simple ATM machine
+// creat a customer that has two properties - pin and balance
+// const customer = {
+//   pin: "1234",
+//   balance: 20000,
+//   checkBalance: function (pinEntered) {
+//     if (pinEntered === this.pin) {
+//       console.log(`Your Account balance is ${this.balance}`);
+//     } else {
+//       console.log("Incorrect Pin");
+//     }
+//   },
+//   withdraw: function (pinEntered, amount) {
+//     if (pinEntered === this.pin) {
+//       if (amount <= this.balance) {
+//         this.balance -= amount;
+//         console.log(
+//           `You have withdrawn ${amount}. Your new balance is ${this.balance}`
+//         );
+//       } else {
+//         console.log("Insufficient funds");
+//       }
+//     } else {
+//       console.log("Incorrect pin");
+//     }
+//   },
+//   deposit: function (pinEntered, amount) {
+//     if (pinEntered === this.pin) {
+//       if (amount > 0) {
+//         this.balance += amount;
+//         console.log(
+//           `You have Deposited ${amount}. Your new balance is ${this.balance}`
+//         );
+//       } else {
+//         console.log("Invalid Deposit Amount");
+//       }
+//     } else {
+//       console.log("Incorrect pin");
+//     }
+//   },
+// };
+
+// customer.checkBalance("14567");
+// customer.withdraw("1234", 4000);
+// customer.deposit("1234", 25000);
+// customer.withdraw("1234", 1000);
+// customer.withdraw("1234", 45000);
+// ///write a function called checkblance that checks if the pin entered is the same as the 
+// //withdrawn
+// //deposit - check the pin,
+
+
+
+// //---------------<ASYNCHRONOUS>>----------------------
+
+// ASYNCHRONOUS JAVASCRIPT---- it allows block of codes to load in the background while other things appear as they are ready
+// console.log(1);
+// console.log(2);
+
+// setTimeout(() => {
+//   console.log(3);
+// }, 3000);
+
+// console.log(4);
+// console.log(5);
+
+
+
+// //---fetching data from an API - Application programming interface
+// // ---Method of interacting with API 
+// //-- http request method - GET POST PATCH DELETE
+
+// //locations (map, real life location)
+// //customers details
+// //restaurants details (real time food)
+// //payment - process
+
+// //dummy data
+// // fetch request
+
+// const apiLink = "https://jsonplaceholder.typicode.com/users";
+// //fetch
+
+// const getData = async (url) => {
+//   try {
+//     const response = await fetch(url);
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+// getData(apiLink);
+// getData ("https://fakestoreapi.com/products");
+// // fetch , convert to json
+
+// //local storage- setItem, getitem, clear, removeItem
+// localStorage.setItem("theme","dark-theme");
+// localStorage.setItem("isLoggedIn",true);
+
+// const isUserLoggedIn = localStorage.getItem("isLoggedIn");
+// console.log(isUserLoggedIn);
+// localStorage.removeItem("IsLoggedIn");
+// localStorage.clear();
+
+//GLOBAL AND LOCAL SCOPED VARIABLES
+// const manager = "john";
+// console.log(manager + "Global");
+// function checkManager() {
+//   const branchManager = "Susan";
+//   const manager = "ADE";
+//   console.log(branchManager);
+//   console.log(manager);
+// };
+
+// checkManager();
+
+// if (true) {
+//   const A = 9;
+//   console.log(A);
+// };
+
+//console.log(A);
+
+
+
+
+
+
